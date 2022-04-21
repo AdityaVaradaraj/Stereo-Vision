@@ -14,3 +14,4 @@ Instructions:
 2) Run the code by typing "python3 stereo_vision_v2.py". Enter the dataset name when prompted. Press "Q" to continue running the code when matplotlib windows pop-up. After finding fundamental matrix, Essential matrix, epipolar lines and after warping, the code might take lot of time (about 4 mins) to run for calculating disparity map. Then depth map will be calculated.
 
 3) You will find these images saved in the directory containing the code.
+4) Pipeline and Outputs for the datasets given by professor have been shown in the Report
