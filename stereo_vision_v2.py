@@ -48,7 +48,7 @@ def compute_Fundamental(pts1, pts2):
     A = np.zeros((len(pts2), 9))
     
     for i in range(len(pts2)):
-        A[i, :] = [pts1[i,0]*pts2[i,0], pts1[i,0]*pts1[i,1], pts1[i,0], pts1[i,1]*pts2[i,0], pts1[i,1]*pts1[i,1], pts1[i,1], pts2[i,0], pts1[i,1], 1]
+        A[i, :] = [pts1[i,0]*pts2[i,0], pts1[i,0]*pts2[i,1], pts1[i,0], pts1[i,1]*pts2[i,0], pts1[i,1]*pts2[i,1], pts1[i,1], pts2[i,0], pts2[i,1], 1]
     
     U, S, Vt = np.linalg.svd(A)
     F = Vt[-1,:].T
